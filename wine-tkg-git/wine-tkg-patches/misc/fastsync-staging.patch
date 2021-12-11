@@ -3778,9 +3778,9 @@ index 4fdec59ca4a..374001d2454 100644
 +#ifdef HAVE_SYS_IOCTL_H
 +#include <sys/ioctl.h>
 +#endif
- #ifdef HAVE_SYS_MMAN_H
  #include <sys/mman.h>
- #endif
+ #ifdef HAVE_SYS_SYSCALL_H
+ #include <sys/syscall.h>
 @@ -49,6 +53,7 @@
  #endif
  #include <string.h>
